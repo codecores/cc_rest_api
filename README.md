@@ -3,7 +3,9 @@ Codecore Rest Api
 ================================================================================
 
 CC Rest Api is a Dart package that facilitates communication with REST APIs.
-It allows sending and receiving HTTP requests and offers configurable options.
+It allows sending and receiving HTTP requests and provides configurable options.
+The biggest purpose in its development is to move the entire architecture
+from methods to class structure in order to eliminate code complexity.
 
 > **NOTE:** It currently supports `GET`, `POST` and `DELETE` operations.
 
