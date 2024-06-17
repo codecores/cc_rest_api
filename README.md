@@ -1,4 +1,5 @@
 
+
 Codecore Rest Api
 ================================================================================
 
@@ -7,7 +8,10 @@ It allows sending and receiving HTTP requests and provides configurable options.
 The biggest purpose in its development is to move the entire architecture
 from methods to class structure in order to eliminate code complexity.
 
+
 > **NOTE:** It currently supports `GET`, `POST` and `DELETE` operations.
+
+
 
 Usage
 ================================================================================
@@ -15,8 +19,10 @@ Usage
 Initialization
 ----------------------------------------
 
+
 First, you need to initialize CC Rest Api with REST API configurations and
 `request/response` logging options. Below is an example initialization:
+
 
 ``` dart
 import 'package:cc_rest_api/cc_rest_api.dart';
@@ -45,7 +51,10 @@ void main() {
 }
 ```
 
+
 > **NOTE:** This README uses long form, not all parameters are mandatory.
+
+
 
 Modules and Usage
 ================================================================================
@@ -53,8 +62,10 @@ Modules and Usage
 Creating Modules
 ----------------------------------------
 
+
 You can create modules to represent each API operation.
 These modules handle request `configurations` and response processing.
+
 
 ``` dart
 import 'package:cc_rest_api/cc_rest_api.dart';
@@ -92,8 +103,11 @@ class GetUser extends CCApiModule {
 > **NOTE:** It is not mandatory to override the request method.
 > You can use it if you want to customize it.
 
+
+
 Using Modules
 ----------------------------------------
+
 
 You can `easily` make API requests using the modules you've created:
 
@@ -121,13 +135,18 @@ void main() {
 In the above example, the GetUser module is used to make a `GET` or `POST` request,
 and actions can be taken based on the response or error.
 
+
+
 License
 ================================================================================
 
-This package is licensed under the MIT License. For more details, please refer to the LICENSE file.
+
+This package is licensed under the BSD-3-Clause License. For more details, please refer to the LICENSE file.
+
 
 
 Installation
 ================================================================================
+
 
 Grab it from [pub.dev](https://pub.dev/packages/cc_rest_api/install).
