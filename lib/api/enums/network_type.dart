@@ -1,0 +1,1 @@
+enum NetworkType { HTTP, HTTPS }
