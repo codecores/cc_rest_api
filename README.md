@@ -44,7 +44,7 @@ void main() {
       onError: (handler) => print("Error: $handler"),
     ),
     modules: [
-      GetUser(const CCApiConfig("get", RequestType.GET, NetworkType.HTTPS)),
+      GetUser(const CCApiConfig("user/get", RequestType.GET, NetworkType.HTTPS)),
       // Other modules can be added here
     ],
   );
@@ -64,12 +64,10 @@ Creating Modules
 
 
 You can create modules to represent each API operation.
-These modules handle request `configurations` and response processing.
+These modules handle request configurations and response processing.
 
 
 ``` dart
-import 'package:cc_rest_api/cc_rest_api.dart';
-
 class GetUser extends CCApiModule {
   GetUser(CCApiConfig config) : super(config);
 
@@ -88,8 +86,6 @@ class GetUser extends CCApiModule {
 `or`
 
 ``` dart
-import 'package:cc_rest_api/cc_rest_api.dart';
-
 class GetUser extends CCApiModule {
   GetUser(CCApiConfig config) : super(config);
 
