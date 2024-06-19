@@ -11,7 +11,8 @@ from methods to class structure in order to eliminate code complexity.
 
 > **NOTE:** It currently supports `GET`, `POST` and `DELETE` operations.
 
-
+**For more detailed information:**
+https://ferhaterdem.medium.com/simplify-your-rest-api-calls-with-cc-rest-api-in-dart-1e944e7ea9ab
 
 Usage
 ================================================================================
