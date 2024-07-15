@@ -1,10 +1,10 @@
 name: cc_rest_api
 description: "CC Rest Api is a Dart package that facilitates communication with REST APIs"
-version: 1.1.0+4
+version: 1.2.0+7
 homepage: https://github.com/codecores/cc_rest_api
 
 environment:
-  sdk: '3.4.3'
+  sdk: '>=3.4.3 <4.0.0'
 
 dependencies:
   flutter:
