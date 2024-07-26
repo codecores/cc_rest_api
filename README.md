@@ -1,4 +1,4 @@
-
+[![pub package](https://img.shields.io/pub/v/http.svg)](https://pub.dev/packages/cc_rest_api)
 
 Codecore Rest Api
 ================================================================================
