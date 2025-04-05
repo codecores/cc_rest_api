@@ -9,5 +9,7 @@ class GetUser extends CCApiModule {
   }
 
   @override
-  response(dynamic data) {}
+  response(dynamic data) {
+    
+  }
 }

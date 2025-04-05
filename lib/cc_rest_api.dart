@@ -21,12 +21,14 @@ class CCRestApi {
     }
   }
 
-  static void register<T>(T instance) {
-    _instances[T.runtimeType.toString()] = instance;
+  static void register(dynamic instance) {
+    print("registering ${instance.runtimeType.toString()}");
+    _instances.putIfAbsent(instance.runtimeType.toString(), () => instance);
   }
 
   static T getModule<T>() {
-    final instance = _instances[T.runtimeType.toString()];
+    print("getting module ${T.toString()}");
+    final instance = _instances[T.toString()];
     if (instance != null) {
       return instance as T;
     } else {
